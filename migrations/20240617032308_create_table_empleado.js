@@ -8,7 +8,7 @@ exports.up = function(knex) {
         table.string('nombre').notNullable();
         table.string('apellido').notNullable();
         table.string('cargo').notNullable();
-        table.decimal('salario').notNullable();
+        table.string('salario').notNullable();
         table.date('fechacontrato').notNullable();
     });
   
