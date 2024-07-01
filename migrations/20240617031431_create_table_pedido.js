@@ -6,7 +6,7 @@ exports.up = function(knex) {
     return knex.schema.createTable('pedido', table => {
         table.increments('id').primary();
         table.date('fecha').notNullable();
-        table.decimal('monto').notNullable();
+        table.string('monto').notNullable();
         table.string('estado').notNullable();
     });
   

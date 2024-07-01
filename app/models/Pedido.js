@@ -14,7 +14,7 @@ class Pedido extends Model { //creo herencia de Model
             properties: {// estructura de los campos 
                 id: { type: 'integer'},
                 fecha: {type: 'string', format: 'date'},
-                monto: {type: 'decimal'},
+                monto: {type: 'string'},
                 estado: {type: 'string'},
                 total: {type: 'string'},
                 direccion: {type: 'integer'}
