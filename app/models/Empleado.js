@@ -16,7 +16,7 @@ class Empleado extends Model { //creo herencia de Model
                 nombre: {type: 'string', minLength: 1},
                 apellido: {type: 'string', minLength: 1},
                 cargo: {type: 'string'},
-                salario: {type: 'decimal'},
+                salario: {type: 'string'},
                 fechacontrato: {type: 'string', format: 'date-time'},
                 telefono: {type: 'string'},
                 correo: {type: 'string', format: 'email'}
