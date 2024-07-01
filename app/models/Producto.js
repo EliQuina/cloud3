@@ -9,15 +9,14 @@ class Producto extends Model { //creo herencia de Model
     static get jsonSchema() { // Especifica la estructura de la tabla
         return {
             type: 'object', // object para un daroa, array para una lista
-            required: ['nombre', 'descripcion'], // campos requeridos 
+            required: ['nombre', 'especificaciones'], // campos requeridos 
 
             properties: {// estructura de los campos 
                 id: { type: 'integer'},
                 nombre: {type: 'string', minLength: 1},
-                precio: {type: 'double'},
-                stok: {type: 'integer'},
+                precio: {type: 'string'},
+                stok: {type: 'string'},
                 categoria: {type: 'string'},
-                especificaciones: {type: 'string'},
                 especificaciones: {type: 'string'}
             }
         };
