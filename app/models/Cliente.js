@@ -16,7 +16,7 @@ class Cliente extends Model { //creo herencia de Model
                 name: {type: 'string', minLength: 1},
                 email: {type: 'string', format: 'email'},
                 edad: {type: 'integer'},
-                fecha: {type: 'string', format: 'date-time'},
+                fecha: {type: 'string', format: 'date'},
                 cedula: {type: 'integer', minLength: 10},
                 apellido: {type: 'string', minLength: 1}
             }

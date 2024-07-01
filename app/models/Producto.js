@@ -18,8 +18,7 @@ class Producto extends Model { //creo herencia de Model
                 stok: {type: 'integer'},
                 categoria: {type: 'string'},
                 especificaciones: {type: 'string'},
-                especificaciones: {type: 'string'},
-                deProveedor: {type: 'integer',ForeignKey: "Proovedor"}
+                especificaciones: {type: 'string'}
             }
         };
     }
