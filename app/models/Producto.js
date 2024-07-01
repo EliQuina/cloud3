@@ -19,8 +19,7 @@ class Producto extends Model { //creo herencia de Model
                 categoria: {type: 'string'},
                 especificaciones: {type: 'string'},
                 especificaciones: {type: 'string'},
-                deProveedor: {type: 'integer',ForeignKey: "Proovedor"},
-                deCategoria: {type: 'integer', ForeignKey: "Categoria"}
+                deProveedor: {type: 'integer',ForeignKey: "Proovedor"}
             }
         };
     }
