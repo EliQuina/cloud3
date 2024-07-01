@@ -9,14 +9,14 @@ class Proveedor extends Model { //creo herencia de Model
     static get jsonSchema() { // Especifica la estructura de la tabla
         return {
             type: 'object', // object para un daroa, array para una lista
-            required: ['nombre ', 'telefono'], // campos requeridos 
+            required: ['nombre', 'telefono'], // campos requeridos 
 
             properties: {// estructura de los campos 
                 id: { type: 'integer'},
                 nombre: {type: 'string', minLength: 1},
                 telefono: {type: 'string'},
                 email: {type: 'string', format: 'email'},
-                salario: {type: 'decimal'},
+                salario: {type: 'string'},
                 fecha: {type: 'string', format: 'date-time'},
                 direccion: {type: 'string'},
                 estado: {type: 'string'}
